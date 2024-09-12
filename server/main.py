@@ -99,7 +99,6 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
 
 def run_http_server():
-    host = 'localhost'
     port = 8080
     server_address = ('', port)
     httpd = HTTPServer(server_address, SimpleHTTPRequestHandler)
@@ -108,4 +107,3 @@ def run_http_server():
 
 if __name__ == '__main__':
     run_http_server()
-    
